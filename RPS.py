@@ -4,7 +4,7 @@ options = ("rock", "paper", "scissors")
 running = True
 
 while running:
-    player = input("Enter a choice (rock, paper, scissors) or 'I quit' to exit: ")
+    player = input("Enter a choice (rock, paper, scissors) or I quit to exit: ")
 
     if player.lower() == "i quit":
         running = False
@@ -21,14 +21,14 @@ while running:
     print(f"Computer: {computer}")
 
     if player == computer:
-        print("It's a tie!")
+        print("Game Tied")
     elif player == "rock" and computer == "scissors":
-        print("You win!")
+        print("You win")
     elif player == "paper" and computer == "rock":
-        print("You win!")
+        print("You win")
     elif player == "scissors" and computer == "paper":
-        print("You win!")
+        print("You win")
     else:
-        print("You lose!")
+        print("You lose")
 
-print("Thanks for playing!")
+print("Thank you for playing")
